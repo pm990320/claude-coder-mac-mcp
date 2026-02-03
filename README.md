@@ -21,11 +21,28 @@ An MCP server that allows Claude Desktop to spawn new Claude Code instances in i
 
 ## Installation
 
+### Via npm (recommended)
+
 ```bash
+npm install -g claude-coder-mac-mcp
+```
+
+### From source
+
+```bash
+git clone https://github.com/pm990320/claude-coder-mac-mcp.git
 cd claude-coder-mac-mcp
 npm install
 npm run build
 ```
+
+### Verify installation
+
+```bash
+claude-coder-mac-mcp check
+```
+
+This runs environment checks to verify macOS, iTerm2, Claude Code CLI, and automation permissions are all configured correctly.
 
 ## CLI Usage
 
@@ -52,6 +69,9 @@ claude-coder-mac-mcp spawn "Fix the tests" --dangerously-skip-permissions
 
 # List current iTerm2 windows
 claude-coder-mac-mcp list
+
+# Check environment is configured correctly
+claude-coder-mac-mcp check
 ```
 
 ## Claude Desktop Configuration
@@ -143,7 +163,8 @@ src/
 ├── index.ts    # CLI entrypoint (uses commander)
 ├── server.ts   # MCP server setup and tool registration
 ├── spawn.ts    # Core spawn functionality
-└── iterm.ts    # iTerm2 AppleScript utilities
+├── iterm.ts    # iTerm2 AppleScript utilities
+└── check.ts    # Environment verification checks
 
 tests/
 ├── spawn.test.ts   # Unit tests for spawn functions

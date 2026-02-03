@@ -1,0 +1,26 @@
+# Source files (dist is published)
+src/
+tests/
+
+# Config files
+tsconfig.json
+tsconfig.build.json
+vitest.config.ts
+eslint.config.cjs
+eslint.ignores.cjs
+.prettierrc.cjs
+
+# Development
+.git/
+.gitignore
+.idea/
+.vscode/
+coverage/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*

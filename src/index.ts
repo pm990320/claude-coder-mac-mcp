@@ -4,6 +4,7 @@ import {Command} from 'commander';
 import {startServer} from './server.js';
 import {spawnClaudeCoder} from './spawn.js';
 import {listItermWindows, formatWindowList} from './iterm.js';
+import {runAllChecks, formatCheckResults} from './check.js';
 
 const program = new Command();
 
@@ -79,6 +80,18 @@ program
   .action(async () => {
     const windows = await listItermWindows();
     console.log(formatWindowList(windows));
+  });
+
+program
+  .command('check')
+  .alias('doctor')
+  .description('Check if the environment is configured correctly')
+  .action(async () => {
+    const result = await runAllChecks();
+    console.log(formatCheckResults(result));
+    if (!result.allPassed) {
+      process.exit(1);
+    }
   });
 
 program.parse();

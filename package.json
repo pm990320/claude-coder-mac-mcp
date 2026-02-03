@@ -39,8 +39,16 @@
     "terminal",
     "automation"
   ],
-  "author": "",
+  "author": "pm990320",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pm990320/claude-coder-mac-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pm990320/claude-coder-mac-mcp/issues"
+  },
+  "homepage": "https://github.com/pm990320/claude-coder-mac-mcp#readme",
   "engines": {
     "node": ">=18.0.0"
   },
