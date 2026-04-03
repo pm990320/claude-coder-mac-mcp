@@ -58,6 +58,8 @@
     "zod": "^4.3.6"
   },
   "devDependencies": {
+    "@commitlint/cli": "^20.5.0",
+    "@commitlint/config-conventional": "^20.5.0",
     "@types/node": "^25.2.0",
     "eslint-plugin-security": "^3.0.1",
     "gts": "^7.0.0",
