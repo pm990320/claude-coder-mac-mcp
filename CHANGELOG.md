@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.4](https://github.com/pm990320/claude-coder-mac-mcp/compare/v1.0.3...v1.0.4) (2026-04-03)
+
+
+### Bug Fixes
+
+* use tag_name for checkout to fix npm publish ([af2f6e8](https://github.com/pm990320/claude-coder-mac-mcp/commit/af2f6e8b62dc4b2ee8d818b30259832fc12cdc2b))
+* use tag_name output for checkout instead of github.ref ([ab27db9](https://github.com/pm990320/claude-coder-mac-mcp/commit/ab27db9baa0cfe0fad895d5622fc9dab109c3b1a))
+
 ## [1.0.3](https://github.com/pm990320/claude-coder-mac-mcp/compare/v1.0.2...v1.0.3) (2026-04-03)
 
 
